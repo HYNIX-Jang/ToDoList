@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <!--
+    Created by HYNIX Jang on 2018.04.29
+    * For : XML for MainActivity to add menu of NavigationDrawer
+    * Github : https://github.com/HYNIX-Jang
+    -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+        <item
+            android:id="@+id/btnLogout"
+            android:icon="@drawable/heart_on"
+            android:title="@string/logout"/>
+
+    <item android:title="About">
+        <menu>
+            <item
+                android:icon="@drawable/heart_off"
+                android:title="About" />
+            <item
+                android:icon="@drawable/heart_off"
+                android:title="Developer" />
+        </menu>
+    </item>
+
+</menu>

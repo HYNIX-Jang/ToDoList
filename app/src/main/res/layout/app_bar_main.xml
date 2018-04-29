@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <!--
+    Created by HYNIX Jang on 2018.04.29
+    * For : XML for MainActivity to add Toolbar, RecyclerView and FloatingActionButton(FAB)
+    * Github : https://github.com/HYNIX-Jang
+    -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <!--상단 Toolbar-->
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary" />
+
+    <!--RecyclerView-->
+    <include layout="@layout/content_main" />
+
+    <!--FAB Button-->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:elevation="16dp"
+        android:src="@drawable/ic_add_black_24dp"
+        app:fabSize="normal"
+        app:theme="@style/AppTheme" />
+
+</RelativeLayout>
